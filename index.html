@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <script src="./scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/images/logo-full.svg" alt="logo" />
+        <h1 id="main-heading">Your Journey to Coding Conf 2025 Starts Here</h1>
+        <h2 id="header-subheading">Secure your spot at next year's biggest coding conference</h2>
+    </header>
+    <main class="form-main">
+        <form class="ticket-form" method="post" id="form-id">
+            <div class="ticket-form-upload" id="ticket-form-upload-id">
+                <img src="./assets/images/icon-upload.svg" class="ticket-form-upload-img" alt="upload icon" />
+                <p id="pre-uploaded-image-p-id">Drag and drop or click to upload</p>
+                <div class="uploaded-image-options-container hidden" id="uploaded-image-div-id">
+                    <p class="uploaded-image-options" id="remove-image" style="text-decoration: underline;">Remove image
+                    </p>
+                    <p class="uploaded-image-options" id="change-image">Change image</p>
+                </div>
+                <input type="file" style="display: none;" id="file-input" />
+            </div>
+            <p class="ticket-upload-info" id="ticket-upload-info-id"> &#9432; <span>upload your photo (JPG or PNG, max
+                    size: 500kb).</span></p>
+
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required min="3" max="30">
+
+            <label for="email">Email Address</label>
+            <input type="email" , id="email" required name="email">
+
+            <label for="github">Github Username</label>
+            <input type="text" id="github" required name="githubUsername">
+
+
+            <button type="submit" id="generate-ticket-button">Generate My Ticket</button>
+        </form>
+    </main>
+
+    <template id="ticket-template">
+        <div class="ticket">
+            <div class="ticket-section" id="ticket-section-1">
+                <img src="./assets/images/logo-mark.svg" alt="logo" />
+                <div class="ticket-subsection">
+                    <h3>Coding Conf</h3>
+                    <p id="date-location-ticket"></p>
+                </div>
+            </div>
+
+            <div class="ticket-section" id="ticket-section-2">
+                <img />
+                <div class="ticket-subsection">
+                    <h3></h3>
+                    <div style="display: flex;">
+                        <img src="./assets/images/icon-github.svg" alt="">
+                        <p id="github-account"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
